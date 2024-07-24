@@ -21,7 +21,8 @@ def index():
 
 def detect_objects():
     global desired_width, desired_height
-    cap = cv2.VideoCapture(0)
+    url = "give your camera source url within this double quotes if no url then put url = 0"
+    cap = cv2.VideoCapture(url)
     while True:
         ret, frame = cap.read()
         if not ret:
