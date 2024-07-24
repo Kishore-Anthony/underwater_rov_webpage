@@ -31,7 +31,6 @@ Please add the Google Drive link containing the `yolov4.weights` file in the fol
 ## Notes
 
 - Adjust the `desired_width` and `desired_height` in `main.py` as needed.
-- Replace the video feed placeholder in `index.html` with the actual video feed element.
+- Replace the video feed placeholder in `main.py` with the actual video feed element.
 - Implement the timer functionality if desired.
 
-Feel free to customize and enhance this project according to your requirements!
