@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <title>URIS - Underwater Robot for Inspection and Salvage</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="title-subtitle">
+                <h2 class="title-header">URIS</h2>
+                <h4 class="sub-title-header">UNDERWATER ROBOT FOR INSPECTION AND SALVAGE</h4>
+            </div>
+            <div id="current-time"></div>
+            <div id="timer" class="timer"></div>
+        </div>
+    </header>
+    <div class="camera-sonar">
+        <div id="left-panel">
+            <h3 class="panel-header">SONAR</h3>
+            <button class="sonar-button" id="start-button">START</button>
+            <button class="sonar-button" id="stop-button">STOP</button>
+            <p id="sonar-status">SONAR STATUS <br>
+                <span class="active-status">IN-ACTIVE</span>
+            </p>
+            <div class="sensor-data">
+                <ul>
+                    <li><img src="{{ url_for('static', filename='depth.png') }}" alt="Depth Icon" class="sensor-icon">
+                        <span id="depth">20 m</span></li>
+                    
+                    <li><img src="{{ url_for('static', filename='temperature.png') }}" alt="Temperature Icon" class="sensor-icon">
+                    <span id="temp">36 °C</span></li>
+                    <li><img src="{{ url_for('static', filename='pressure.png') }}" alt="Pressure Icon" class="sensor-icon">
+                    <span id="pressure">2 ATM</span></li>
+            </div>
+        </div>
+        <div id="camera">
+            <div>
+                <h3 class="camera-header">CAMERA</h3>
+            </div>
+            <div id="camera-cv-box" ondblclick="toggleFullScreen(this)">
+                <img src="/video_feed" alt="Camera Feed" id="feed">
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

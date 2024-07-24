@@ -1,0 +1,249 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+.title-bar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffc107;
+}
+.wifi button
+{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    color: rgb(129, 246, 3);
+    background-color: rgb(1, 1, 1);
+    border-radius: 10px;
+}
+.batt button
+{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    color: rgb(129, 246, 3);
+    background-color: rgb(12, 12, 12);
+    border-radius: 10px;
+
+}
+
+.live button
+{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    color: rgb(129, 246, 3);
+    background-color: rgb(12, 12, 12);
+    border-radius: 10px;
+    cursor:pointer;
+}
+.temp button
+{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    color: rgb(129, 246, 3);
+    background-color: rgb(12, 12, 12);
+    border-radius: 10px;
+    cursor:pointer;
+}
+.loc button
+{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    color: rgb(129, 246, 3);
+    background-color: rgb(12, 12, 12);
+    border-radius: 10px;
+    cursor:pointer;
+}
+main{
+    position:relative;
+}
+.flex
+{
+    position:absolute;
+    right:70px;
+    top:0 px;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.flex1{
+    position:absolute;
+    left:75px;
+    top:0px;
+    display:flex;
+    gap: 20px;
+    flex-direction: row;
+}
+.flex1 div button{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin-bottom: 5px;
+    color: rgb(129, 246, 3);
+    background-color: rgb(12, 12, 12);
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+header {
+    background-color: #002535;
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    position:relative;
+}
+.rov1{
+    align-content:flex-end;
+}
+
+.video-container {
+    position: relative;
+    width: 95%; /* Adjust width as needed */
+    height: 70vh; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%; /* Make the video fill the container */
+    height: 100%; /* Make the video fill the container */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+#detection {
+    margin-left: 20px;
+    max-width: 50%;
+    border: 2px solid #ddd;
+}
+
+#startButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#startButton:hover {
+    background-color: #0056b3;
+}
+
+.loading-indicator {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(129,246,3);
+    padding: 10px;
+    border-radius: 5px;
+}
+.wifib:hover
+{
+    color:#fc0808;
+}
+.battb:hover
+{
+    color: #fc0808;
+}
+.liveb:hover
+{
+    color:#fc0808;
+}
+.tempb:hover
+{
+    color: #fc0808;
+}
+.locb:hover{
+    color:#fc0808;
+}
+.value
+{
+    position: absolute;
+    top: 80px;
+    right: 157px;
+    color: #ddd;
+    padding:3px;
+}
+.value1
+{
+    position: absolute;
+    bottom:70px;
+    right: 150px;
+    padding:3px;
+    color: #ddd;
+}
+.value2
+{
+    position: absolute;
+    bottom:110px;
+    right: 100px;
+    padding:3px;
+    color: #ddd;
+}
+video
+{
+    margin-top: 10px;
+    margin-left: 50px;
+height: 200px;
+width: 300px;
+border: #ddd;
+border-radius: 10px;
+}
+video#rov-video {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    height: 100px;
+    width: 150px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    z-index: 999; /* Ensure it's above other content */
+}
+img#bottom-right-img {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    z-index: 999; /* Ensure it's above other content */
+    height: 100px;
+    width: 150px;
+}
+
